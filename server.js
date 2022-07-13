@@ -13,8 +13,8 @@ mongoose.connect('mongodb+srv://Prince:zUM4bKNkIpUagsWZ@learningcluster.tlmnfrp.
     console.log("Connection to database succesful 🌍🌍");
 })
 
-const server = app.listen(3000, '127.0.0.1', () => {
-    console.log("server started on port 3000 🙂")
+const server = app.listen(process.env.PORT, () => {
+    console.log("server started 🙂")
 })
 
 process.on('unhandledRejection', err => {
