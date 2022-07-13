@@ -1,0 +1,11 @@
+extends base
+
+block content 
+    .container 
+        p.loginHead Log In
+        label.username Email: 
+        input(type="email" name="username" id="username")
+        label.password Password: 
+        input(type="password" name="password" id="password")
+
+        button(type="submit" id="submitButton") Submit

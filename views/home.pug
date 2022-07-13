@@ -1,0 +1,13 @@
+extends base
+
+block content 
+    .cardsContainer 
+        each user in users
+            .cardDiv 
+                img.cardImage(src=`${user.photo}`, alt=`${user.photo}`)
+                p.cardName= user.name
+                p.designation= user.designation
+                hr(color="grey")
+                p.bio= user.bio
+                button.contact Contact ✉️
+            
